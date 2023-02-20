@@ -1,7 +1,7 @@
-import Book from './modules/book.js'
-import { nevigateTo } from './modules/navigate.js';
-import { Store } from './modules/store.js';
-import { date } from './modules/date.js';
+import Book from './modules/book.js';
+import nevigateTo from './modules/navigate.js';
+import Store from './modules/store.js';
+import date from './modules/date.js';
 
 class UI {
   static displayBooks() {
@@ -57,13 +57,14 @@ document.querySelector('.add-book-form').addEventListener('submit', (e) => {
 });
 // Remove books
 document.querySelector('.table-body').addEventListener('click', (e) => {
-    // remove book from UI
-    UI.deleteBook(e.target);
-  
-    // Remove book from the local storage
-    Store.removeBook(e.target.parentElement.previousElementSibling.previousElementSibling.textContent);
-  });
+  // remove book from UI
+  UI.deleteBook(e.target);
 
-//navigating through the application
-  nevigateTo();
-  date();
+  // Remove book from the local storage
+  const s = e.target.parentElement.previousElementSibling.previousElementSibling.textContent;
+  Store.removeBook(s);
+});
+
+// navigating through the application
+nevigateTo();
+date();
