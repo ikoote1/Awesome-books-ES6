@@ -5,7 +5,7 @@ body {
   .tables {
     width: 98%;
     height: auto;
-    border: 2px solid #000;
+    border: 2px solid white;
     position: relative;
     left: 1%;
     margin-top: 30px;
@@ -50,20 +50,22 @@ body {
   }
   
   tr {
-    border: 1px solid #000;
+    border: 1px solid white;
     height: 40px;
-    background-color: rgb(231, 148, 100);
+    background-color: orange;
   }
   
   td {
     padding-left: 2%;
     font-size: 15px;
+    color: white;
+    font-weight: 800;
   }
   
   .remove-btn {
-    color: #000;
+    color: orange;
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid orange;
     text-decoration: none;
     float: right;
     padding: 3px;
@@ -71,17 +73,10 @@ body {
   }
   
   .remove-btn:hover {
-    background-color: #05052e;
+    background-color: red;
     color: #fff;
   }
   
-  /* .line {
-    width: 20%;
-    margin: 40px 40% 20px 40%;
-    height: 2px;
-    background-color: #05052e;
-    align-items: center;
-  } */
   .book-displayed-section {
     padding-top: 40px;
   }
@@ -124,12 +119,18 @@ body {
   h2 {
     text-align: center;
   }
+  .title,.author{
+    height: 35px;
+    border-color: orange;
+  }
   
   .submit-btn {
     width: 35%;
     position: relative;
     left: 65%;
-    background-color: #7a7ac2;
+    height: 35px;
+    background-color: orange;
+    border-color: white;
   }
   
   /* contact section */
