@@ -1,6 +1,40 @@
 import Book from './modules/book.js'
-import { UI } from './modules/UI.js';
+import { nevigateTo } from './modules/navigate.js';
 import { Store } from './modules/store.js';
+
+class UI {
+  static displayBooks() {
+    const books = Store.getBooks();
+
+    books.forEach((book) => UI.addBookToList(book));
+  }
+
+  static addBookToList(book) {
+    const list = document.querySelector('.table-body');
+
+    const tableRow = document.createElement('tr');
+
+    tableRow.innerHTML = `
+           <td>${book.title}</td>
+           <td class= "td-by">  By ${book.author}</td>
+           <td ><a href="#" class="remove-btn">Remove</a></td>
+        `;
+
+    list.appendChild(tableRow);
+  }
+
+  static empty() {
+    document.querySelector('.title').value = '';
+    document.querySelector('.author').value = '';
+  }
+
+  static deleteBook(e) {
+    if (e.classList.contains('remove-btn')) {
+      e.parentElement.parentElement.remove();
+    }
+  }
+}
+
 // event:Display books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
@@ -29,39 +63,6 @@ document.querySelector('.table-body').addEventListener('click', (e) => {
     Store.removeBook(e.target.parentElement.previousElementSibling.previousElementSibling.textContent);
   });
 
-// complete website with navigation
-const logo = document.querySelector('.logo');
-const bookList = document.querySelector('.list-link');
-const addLink = document.querySelector('.add-link');
-const contact = document.querySelector('.contact-link');
-const bookDisplayed = document.querySelector('.book-displayed-section');
-const addSection = document.querySelector('.add-book-section');
-const contactSec = document.querySelector('.contact-section');
+//navigating through the application
+  nevigateTo();
 
-//event listners
-logo.addEventListener('click',() =>{
-    bookDisplayed.classList.remove('active');
-    addSection.classList.remove('active');
-    contactSec.classList.remove('active');
-});
-
-
-bookList.addEventListener('click', () => {
-  bookDisplayed.classList.remove('active');
-  addSection.classList.remove('active');
-  contactSec.classList.remove('active');
-});
-
-
-
-addLink.addEventListener('click', () => {
-  bookDisplayed.classList.add('active');
-  addSection.classList.add('active');
-  contactSec.classList.remove('active');
-});
-
-contact.addEventListener('click', () => {
-  bookDisplayed.classList.add('active');
-  addSection.classList.remove('active');
-  contactSec.classList.add('active');
-});
