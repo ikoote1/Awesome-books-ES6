@@ -46,7 +46,7 @@ document.querySelector('.add-book-form').addEventListener('submit', (e) => {
 
   const book = new Book(title, author);
 
-  // add book to UI
+  // add book to UI u
   UI.addBookToList(book);
 
   // add book to the local storage
