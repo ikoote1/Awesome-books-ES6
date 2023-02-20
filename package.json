@@ -1,0 +1,23 @@
+{
+  "name": "awesome-books-es6",
+  "version": "1.0.0",
+  "description": "- This is a website for storing books.\r # 📗 Table of Contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikoote1/Awesome-books-ES6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikoote1/Awesome-books-ES6/issues"
+  },
+  "homepage": "https://github.com/ikoote1/Awesome-books-ES6#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
+}
