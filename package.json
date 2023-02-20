@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ikoote1/Awesome-books-ES6#readme",
   "devDependencies": {
     "hint": "^7.1.3"
+  },
+  "dependencies": {
+    "luxon": "^3.2.1"
   }
 }

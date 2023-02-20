@@ -1,6 +1,7 @@
 import Book from './modules/book.js'
 import { nevigateTo } from './modules/navigate.js';
 import { Store } from './modules/store.js';
+import { date } from './modules/date.js';
 
 class UI {
   static displayBooks() {
@@ -65,4 +66,4 @@ document.querySelector('.table-body').addEventListener('click', (e) => {
 
 //navigating through the application
   nevigateTo();
-
+  date();

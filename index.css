@@ -48,6 +48,12 @@ body {
     cursor: pointer;
     color: #fff;
   }
+  .date{
+    float: right;
+    font-weight: 700;
+    color: blue;
+    margin-right: 2%;
+  }
   
   tr {
     border: 1px solid white;
@@ -118,6 +124,9 @@ body {
   
   h2 {
     text-align: center;
+    color: blue;
+    font-weight: 800;
+    font-size: 30px;
   }
   .title,.author{
     height: 35px;
@@ -131,6 +140,7 @@ body {
     height: 35px;
     background-color: orange;
     border-color: white;
+    color: white;
   }
   
   /* contact section */
@@ -152,6 +162,11 @@ body {
   .contact-paragraph {
     margin-top: 50px;
     margin-left: 30%;
+  }
+  p,ul>li{
+    color: blue;
+    font-weight: 700;
+    font-size: 20px;
   }
   
   .contact-list {
