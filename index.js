@@ -52,7 +52,7 @@ document.querySelector('.add-book-form').addEventListener('submit', (e) => {
   // add book to the local storage
   Store.addBook(book);
 
-  // empty fields
+  // empty field
   UI.empty();
 });
 // Remove books
