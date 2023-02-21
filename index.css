@@ -1,0 +1,211 @@
+body {
+  background-color: aquamarine;
+}
+
+.tables {
+  width: 98%;
+  height: auto;
+  border: 2px solid white;
+  position: relative;
+  left: 1%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.nar-bar {
+  position: fixed;
+  width: 100%;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-bar-list {
+  background-color: #4949d4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: #000;
+  position: relative;
+  padding: 0 5%;
+  height: 50px;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  gap: 30px;
+
+  /* align-items: center; */
+}
+
+p,
+ul > li {
+  color: blue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-list li {
+  cursor: pointer;
+  color: #fff;
+}
+
+.date {
+  float: right;
+  font-weight: 700;
+  color: blue;
+  margin-right: 2%;
+}
+
+tr {
+  border: 1px solid white;
+  height: 40px;
+  background-color: orange;
+}
+
+td {
+  padding-left: 2%;
+  font-size: 15px;
+  color: white;
+  font-weight: 800;
+}
+
+.remove-btn {
+  color: orange;
+  background-color: #fff;
+  border: 1px solid orange;
+  text-decoration: none;
+  float: right;
+  padding: 3px;
+  margin-right: 5%;
+}
+
+.remove-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.book-displayed-section {
+  padding-top: 40px;
+}
+
+.book-displayed-section.active {
+  display: none;
+}
+
+.all-books-title {
+  margin-top: 80px;
+}
+
+/* add book section */
+
+.add-book-section {
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+  display: none;
+}
+
+.add-book-section.active {
+  display: block;
+}
+
+.add-book-title {
+  margin-top: 80px;
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 30%;
+  position: relative;
+  left: 35%;
+  padding-top: 60px;
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.title,
+.author {
+  height: 35px;
+  border-color: orange;
+}
+
+.submit-btn {
+  width: 35%;
+  position: relative;
+  left: 65%;
+  height: 35px;
+  background-color: orange;
+  border-color: white;
+  color: white;
+}
+
+/* contact section */
+
+.contact-section {
+  align-items: center;
+  padding-top: 40px;
+  display: none;
+}
+
+.contact-section.active {
+  display: block;
+}
+
+.contact-title {
+  margin-top: 80px;
+}
+
+.contact-paragraph {
+  margin-top: 50px;
+  margin-left: 30%;
+}
+
+.contact-list {
+  margin-left: 30%;
+}
+
+/* footer */
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4949d4;
+  display: flex;
+  position: fixed;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+@media (min-width: 790px) {
+  .submit-btn {
+    width: 20%;
+    position: relative;
+    left: 80%;
+  }
+
+  td {
+    font-size: 20px;
+  }
+
+  .line {
+    width: 14%;
+    margin: 40px 43% 20px 43%;
+  }
+}
