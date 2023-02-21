@@ -1,4 +1,4 @@
-export default function nevigateTo() {
+const nevigateTo = () => {
   // complete website with navigation
   const logo = document.querySelector('.logo');
   const bookList = document.querySelector('.list-link');
@@ -7,8 +7,14 @@ export default function nevigateTo() {
   const bookDisplayed = document.querySelector('.book-displayed-section');
   const addSection = document.querySelector('.add-book-section');
   const contactSec = document.querySelector('.contact-section');
+  const backIn = document.querySelector('.submit-btn');
 
-  // event listners
+  //event listners
+   backIn.addEventListener('click',()=>{
+    bookDisplayed.classList.remove('active');
+    addSection.classList.remove('active');
+    contactSec.classList.remove('active');
+   });
   logo.addEventListener('click', () => {
     bookDisplayed.classList.remove('active');
     addSection.classList.remove('active');
@@ -33,3 +39,5 @@ export default function nevigateTo() {
     contactSec.classList.add('active');
   });
 }
+
+export default nevigateTo;
