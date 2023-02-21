@@ -9,12 +9,12 @@ const nevigateTo = () => {
   const contactSec = document.querySelector('.contact-section');
   const backIn = document.querySelector('.submit-btn');
 
-  //event listners
-   backIn.addEventListener('click',()=>{
+  // event listners
+  backIn.addEventListener('click', () => {
     bookDisplayed.classList.remove('active');
     addSection.classList.remove('active');
     contactSec.classList.remove('active');
-   });
+  });
   logo.addEventListener('click', () => {
     bookDisplayed.classList.remove('active');
     addSection.classList.remove('active');
@@ -38,6 +38,6 @@ const nevigateTo = () => {
     addSection.classList.remove('active');
     contactSec.classList.add('active');
   });
-}
+};
 
 export default nevigateTo;
