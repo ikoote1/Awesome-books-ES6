@@ -41,7 +41,7 @@
 
 ### Git <a name="Git"></a>
 ### Vs code<a name="Vs code"></a>
-### Javascript <a name="Javascript"></a>
+### ES6 Javascript <a name="Javascript"></a>
 ### HTML<a name="HTML"></a>
 ### CSS <a name="CSS"></a> 
 
@@ -191,4 +191,4 @@ This project is [MIT](./LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-[](https://github.com/ikoote1/Awesome-books-ES6/pull/1)
+[]**Awesome-books-ES6** (https://github.com/ikoote1/Awesome-books-ES6/pull/1)
