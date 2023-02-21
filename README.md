@@ -80,13 +80,13 @@
   - LinkedIn https://www.linkedin.com/in/ikoote-rasuli-479545246/ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-## Video Description of the project <a name="Video" href="https://www.loom.com/share/5105d97c56bc45adbcd6633f3da77ec2" > Video </a>
+## Video Description of the project <a name="Video" href="#" > Video </a>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="Preim Live"></a>
 
-- Live Demo Link(href="https://ikoote1.github.io/Awesome-books-ES6/)
+- Live Demo Link(href="https://ikoote1.github.io/Awesome-books-ES6/")
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
