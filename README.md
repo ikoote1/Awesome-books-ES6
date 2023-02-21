@@ -105,11 +105,7 @@ In order to run this project you need:
 
 ### Setup
 
->Clone this (https://github.com/ikoote1/Awesome-books-ES6.git) repository to your desired folder:
-
-
-  - git clone git@github.com/ikoote1/Awesome-books-ES6.git
-
+>Clone this (https://github.com/ikoote1/Awesome-books-ES6.git) repository to your desired folder.
 
 ### Install
 
@@ -195,4 +191,4 @@ This project is [MIT](./LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-[](https://github.com/ikoote1/Portfolio-Setup/pull/1)
+[](https://github.com/ikoote1/Awesome-books-ES6/pull/1)
